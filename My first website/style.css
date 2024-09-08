@@ -1,0 +1,58 @@
+header {
+    background: #DD571C;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navigationBar {
+    background-color: #333333;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+#navigationBar a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+.pageContent {
+    padding: 1.5%;
+    display: flex;
+    display: -ms-flexbox;
+}
+
+.sidebar {
+    -ms-flex: 30%;
+    flex: 30%;
+    padding-right: 2%;
+}
+
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+}
+
+img {
+    width: 100%;
+}
+
+/* this is only gonna take place if the screen width is NOT greater than 700px */
+@media screen and (max-width: 700px) {
+    #navigationBar {
+        /* below makes nav bar not sticky for phones */
+        position: relative; 
+    }
+
+    .pageContent {
+        flex-direction: column;
+    }
+}
